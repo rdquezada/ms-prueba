@@ -1,0 +1,16 @@
+spring:
+  profiles: container
+  application:
+    name: zuul
+​eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:8761/eureka/
+    #register-with-eureka: true
+server:
+  port: 9000
+zuul:
+  routes:
+    microservicio:
+      path: /api/**
+      serviceId: microservicio

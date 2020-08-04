@@ -1,0 +1,11 @@
+spring:
+  profiles: container
+  application:
+    name: microservicio
+​eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:8761/eureka/
+    #register-with-eureka: true
+server:
+  port: 3333
